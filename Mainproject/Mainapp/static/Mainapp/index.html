@@ -1,0 +1,368 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+        {% load static %}
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="{% static 'Mainapp/img/fav.png' %}">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Foody</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="{% static 'Mainapp/css/linearicons.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/font-awesome.min.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/bootstrap.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/magnific-popup.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/jquery-ui.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/nice-select.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/animate.min.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/owl.carousel.css' %}">
+			<link rel="stylesheet" href="{% static 'Mainapp/css/main.css' %}">
+		</head>
+		<body>
+			<header id="header">
+				<div class="header-top">
+					<div class="container">
+				  		<div class="row justify-content-center">
+						      <div id="logo">
+						        <a href="index.html"><img src="{% static 'Mainapp/img/logo.png' %}" alt="" title="" /></a>
+						      </div>
+				  		</div>
+					</div>
+				</div>
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-center d-flex">
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="{% static 'Mainapp/index.html' %}">Home</a></li>
+				          <li><a href="{% static 'Mainapp/about.html' %}">About</a></li>
+				          <li><a href="{% static 'Mainapp/gallery.html' %}">Gallery</a></li>
+                          <li><a href="/Login">Login</a></li>
+                          <li><a href="/Register">Register</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->
+					</div>
+				</div>
+			</header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-12 banner-content">
+							<h1 class="text-white">Foody-Veg & non-veg Recipes and vegetables</h1>
+							<p class="text-white">
+								Check it out order, Hurry! Be foody :)
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 home-about-left">
+							<h1>About Our Story</h1>
+							<p>
+								If you talk about food just as much as you eat it, you're in good company. We've got famous chefs and stars—Julia Child, Sophia Loren, Virginia Woolf—to thank for some of the greatest food quotes of all time. Do what you will with these: Memorize them, pin them, or print them out and tack them up all over your kitchen
+							</p>
+						</div>
+						<div class="col-lg-6 home-about-right">
+							<img class="img-fluid" src="{% static 'Mainapp/img/about-img.jpg' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End home-about Area -->
+
+			<!-- Start menu-area Area -->
+            <section class="menu-area section-gap" id="menu">
+                <div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">What kind of Foods we serve for you</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+
+                    <ul class="filter-wrap filters col-lg-12 no-padding">
+                        <li class="active" data-filter="*">All Menu</li>
+                        <li data-filter=".breakfast">Breakfast</li>
+                        <li data-filter=".lunch">Lunch</li>
+                        <li data-filter=".dinner">Dinner</li>
+                        <li data-filter=".budget-meal">Budget Meal</li>
+                        <li data-filter=".buffet">Buffet</li>
+                    </ul>
+
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="col-md-6 all breakfast">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Povha</h4>
+										<h4 class="price">Rs50</h4>
+									</div>
+
+								</div>
+                            </div>
+                            <div class="col-md-6 all dinner">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Idli-Sambar</h4>
+										<h4 class="price">Rs100</h4>
+									</div>
+
+								</div>
+                            </div>
+                            <div class="col-md-6 all budget-meal">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Pani-Puri</h4>
+										<h4 class="price">Rs80</h4>
+									</div>
+
+								</div>
+                            </div>
+                            <div class="col-md-6 all breakfast">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Lunch</h4>
+										<h4 class="price">Rs300</h4>
+									</div>
+
+								</div>
+                            </div>
+                            <div class="col-md-6 all lunch">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Dinner</h4>
+										<h4 class="price">Rs300</h4>
+									</div>
+								</div>
+                            </div>
+                            <div class="col-md-6 all buffet">
+								<div class="single-menu">
+									<div class="title-wrap d-flex justify-content-between">
+										<h4>Manchurian</h4>
+										<h4 class="price">Rs150</h4>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End menu-area Area -->
+
+			<!-- Start reservation Area -->
+			<section class="reservation-area section-gap relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-6 reservation-left">
+							<h1 class="text-white">place your order OR Reserve Your Seats
+							to Confirm if You Come
+							with Your Family</h1>
+						</div>
+						<div class="col-lg-5 reservation-right">
+							<form class="form-wrap text-center" action="#">
+								<input type="text" class="form-control" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" >
+								<input type="email" class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
+								<input type="text" class="form-control" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" >
+								<input type="text" class="form-control date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" >
+								<div class="form-select" id="service-select">
+									<select>
+										<option data-display="">Select Event</option>
+										<option value="1">Event One</option>
+										<option value="2">Event Two</option>
+										<option value="3">Event Three</option>
+										<option value="4">Event Four</option>
+									</select>
+								</div>
+								<button class="primary-btn text-uppercase mt-20">Make order OR Do reservation</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End reservation Area -->
+
+			<!-- Start gallery-area Area -->
+            <section class="gallery-area section-gap" id="gallery">
+                <div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Food and Customer Gallery</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+
+                    <ul class="filter-wrap filters col-lg-12 no-padding">
+                        <li class="active" data-filter="*">All Menu</li>
+                        <li data-filter=".breakfast">Breakfast</li>
+                        <li data-filter=".lunch">Lunch</li>
+                        <li data-filter=".dinner">Dinner</li>
+                        <li data-filter=".budget-meal">Budget Meal</li>
+                        <li data-filter=".buffet">Buffet</li>
+                    </ul>
+
+
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g1.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 all dinner">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g2.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g3.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g4.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g5.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 all buffet">
+                            	<div class="single-gallery">
+                            		<img class="img-fluid" src="{% static 'Mainapp/img/g6.jpg' %}" alt="">
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End gallery-area Area -->
+
+
+
+			<!-- Start blog Area -->
+			<section class="blog-area section-gap" id="blog">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Our speciality</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="{% static 'Mainapp/img/b1.jpg' %}" alt="">
+							</div>
+							<a href="blog-single.html"><h4>Cooking Perfect Fried Rice
+							in minutes</h4></a>
+
+
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="{% static 'Mainapp/img/b2.jpg' %}" alt="">
+							</div>
+							<a href="blog-single.html"><h4>Egg Recipe</h4></a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="{% static 'Mainapp/img/b3.jpg' %}" alt="">
+							</div>
+							<a href="blog-single.html"><h4>Noodls</h4></a>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="{% static 'Mainapp/img/b4.jpg' %}" alt="">
+							</div>
+							<a href="blog-single.html"><h4>Fresh vegetables</h4></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End blog Area -->
+
+			<!-- start footer Area -->
+			<footer class="footer-area">
+				<div class="footer-widget-wrap">
+					<div class="container">
+						<div class="row section-gap">
+							<div class="col-lg-4  col-md-6 col-sm-6">
+								<div class="single-footer-widget">
+									<h4>Opening Hours</h4>
+									<ul class="hr-list">
+										<li class="d-flex justify-content-between">
+											<span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
+										</li>
+										<li class="d-flex justify-content-between">
+											<span>Saturday</span> <span>08.00 am - 10.00 pm</span>
+										</li>
+										<li class="d-flex justify-content-between">
+											<span>Sunday</span> <span>08.00 am - 10.00 pm</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4  col-md-6 col-sm-6">
+								<div class="single-footer-widget">
+									<h4>Contact Us</h4>
+									<p>
+										IIT BOMBAY, India.
+									</p>
+									<p class="number">
+										###-###-###-### <br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="{% static 'Mainapp/js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/popper.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/vendor/bootstrap.min.js' %}"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+ 			<script src="{% static 'Mainapp/js/jquery-ui.js' %}"></script>
+  			<script src="{% static 'Mainapp/js/easing.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/hoverIntent.js' %}"></script>
+			<script src="{% static 'Mainapp/js/superfish.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/jquery.ajaxchimp.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/jquery.magnific-popup.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/jquery.nice-select.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/owl.carousel.min.js' %}"></script>
+            <script src="{% static 'Mainapp/js/isotope.pkgd.min.js' %}"></script>
+			<script src="{% static 'Mainapp/js/mail-script.js' %}"></script>
+			<script src="{% static 'Mainapp/js/main.js' %}"></script>
+		</body>
+	</html>
